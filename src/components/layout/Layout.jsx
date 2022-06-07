@@ -1,7 +1,13 @@
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
+import Main from "./main/Main";
+
 export function Layout() {
     return (
         <div>
-            <h2>This is my Layout</h2>
+            <Header />
+            <Main />
+            <Footer />
         </div>
     );
 }
