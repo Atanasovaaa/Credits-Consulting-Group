@@ -11,3 +11,7 @@ const apiUrl = "http://localhost:3003/users";
 export function getAllUsers() {
   return axios.get(apiUrl);
 }
+
+export function getUserById(id) {
+  return axios.get(`${apiUrl}/${id}`);
+}

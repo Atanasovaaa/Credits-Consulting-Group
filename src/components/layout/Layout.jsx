@@ -1,10 +1,11 @@
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import Main from "./main/Main";
+import "./layout.scss";
 
 export function Layout() {
     return (
-        <div>
+        <div className="wrapper">
             <Header />
             <Main />
             <Footer />
