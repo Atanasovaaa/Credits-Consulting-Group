@@ -1,18 +1,26 @@
 .user-card {
-  p {
-    text-align: start;
-  }
+  margin: 15px 20px;
 
-  .key {
-    font-weight: bold;
-  }
-
-  .btn-holder {
+  .card-body {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
-    button {
-      width: 45%;
+    p {
+      text-align: start;
+    }
+
+    .key {
+      font-weight: bold;
+    }
+
+    .btn-holder {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        width: 45%;
+      }
     }
   }
 }
