@@ -12,14 +12,18 @@
 
     .key {
       font-weight: bold;
+      font-size: 14px;
     }
 
     .btn-holder {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
 
       button {
-        width: 45%;
+        i {
+          margin-right: 8px;
+        }
       }
     }
   }

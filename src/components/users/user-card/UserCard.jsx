@@ -16,7 +16,7 @@ export default function UserCard( { user } ) {
     }
     
     return (
-        <Card style={{ width: '17rem' }} className="user-card">
+        <Card style={{ width: '20rem' }} className="user-card">
         <Card.Img variant="top" src={user.picture} />
             <Card.Body>
                 <Card.Title>{user.name}</Card.Title>
@@ -33,9 +33,9 @@ export default function UserCard( { user } ) {
                     <span className="value">{user.phone}</span>
                 </Card.Text>
                 <div className="btn-holder">
-                    <Button variant="primary">Edit</Button>
-                    <Button variant="danger">Delete</Button>
-                    <Button variant="info" onClick={redirectToDetails}>Details</Button>
+                    <Button variant="primary" onClick={redirectToDetails}><i className="fa fa-eye"></i>Details</Button>
+                    <Button variant="success"><i className="fa fa-pencil"></i>Edit</Button>
+                    <Button variant="danger"><i className="fa fa-trash"></i>Delete</Button>
                 </div>
             </Card.Body>
         </Card>
