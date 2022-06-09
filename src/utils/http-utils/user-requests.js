@@ -15,3 +15,7 @@ export function getAllUsers() {
 export function getUserById(id) {
   return axios.get(`${apiUrl}/${id}`);
 }
+
+export function deleteUser(id) {
+  return axios.delete(`${apiUrl}/${id}`);
+}

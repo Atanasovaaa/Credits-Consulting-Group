@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router";
 import './userCard.scss';
 
-export default function UserCard( { user } ) {
+export default function UserCard( { user, deleteUser } ) {
 
     const navigate = useNavigate();
 
@@ -35,7 +35,7 @@ export default function UserCard( { user } ) {
                 <div className="btn-holder">
                     <Button variant="primary" onClick={redirectToDetails}><i className="fa fa-eye"></i>Details</Button>
                     <Button variant="success"><i className="fa fa-pencil"></i>Edit</Button>
-                    <Button variant="danger"><i className="fa fa-trash"></i>Delete</Button>
+                    <Button variant="danger" onClick={() => deleteUser(user.id)}><i className="fa fa-trash"></i>Delete</Button>
                 </div>
             </Card.Body>
         </Card>

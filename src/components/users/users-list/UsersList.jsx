@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllUsers } from "../../../utils/http-utils/user-requests";
+import { deleteUser, getAllUsers } from "../../../utils/http-utils/user-requests";
 import UserCard from "../user-card/UserCard";
 import './usersList.scss';
 
@@ -13,9 +13,16 @@ export default function UsersList() {
        });
     }, []);
 
+    const deleteUserHandler = async (id) => {
+        await deleteUser(id);
+        setUsers(prevState => {
+            return prevState.filter(user => user.id !== id)
+        });
+    }
+
     return (
         <div className="users-list-wrapper">
-            { users.map(user => <UserCard key={user.id} user={user} />) }
+            { users.map(user => <UserCard key={user.id} user={user} deleteUser={deleteUserHandler} />) }
         </div>
     );
 }
