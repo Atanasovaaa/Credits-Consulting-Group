@@ -2,9 +2,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { getLoggedUser } from "../../../utils/http-utils/user-requests";
 
 
 export default function Header() {
+  const loggedUser = getLoggedUser();
+  
   return (
     <header>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -25,10 +28,7 @@ export default function Header() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            { loggedUser && <span className="btn btn-danger" refresh="true">Logout</span> }
           </Nav>
         </Navbar.Collapse>
         </Container>
