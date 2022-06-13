@@ -100,5 +100,15 @@
           "address": "297 Morgan Avenue, Tolu, Arizona, 9357",
           "password": "123456"
         }
-      ]
+      ],
+      "tasks": [{
+        "id": 1,
+        "title": "Bug Fixes",
+        "description": "Make a header responsive. When you switch to mobile device the menu don't collapse.",
+        "status": "TO DO",
+        "authorId": "147103a2-97ff-4c78-a081-72747ccfbcb0",
+        "authorName": "Wall Davidson",
+        "createdDate": "2022-05-20",
+        "dueDate": "2022-06-20"
+      }]
 }
