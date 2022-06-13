@@ -5,9 +5,10 @@
           "isActive": false,
           "picture": "https://picsum.photos/250/150/?random=1",
           "name": "Cervantes Maynard",
-          "email": "cervantesmaynard@endicil.com",
+          "email": "admin@admin.com",
           "phone": "+1 (876) 516-2604",
-          "address": "864 Autumn Avenue, Tilden, Georgia, 5935"
+          "address": "864 Autumn Avenue, Tilden, Georgia, 5935",
+          "password": "123456"
         },
         {
           "id": "7e62148e-7c44-44cc-bae2-e7b5b11d5748",
@@ -16,7 +17,8 @@
           "name": "Cabrera Simon",
           "email": "cabrerasimon@endicil.com",
           "phone": "+1 (854) 425-3587",
-          "address": "175 Willoughby Street, Kipp, Colorado, 5753"
+          "address": "175 Willoughby Street, Kipp, Colorado, 5753",
+          "password": "123456"
         },
         {
           "id": "b2006e5f-8796-476f-9d9b-edfb7904d34b",
@@ -25,7 +27,8 @@
           "name": "Alyce Burnett",
           "email": "alyceburnett@endicil.com",
           "phone": "+1 (931) 576-2730",
-          "address": "800 Lawn Court, Mahtowa, Virgin Islands, 7650"
+          "address": "800 Lawn Court, Mahtowa, Virgin Islands, 7650",
+          "password": "123456"
         },
         {
           "id": "ad24a739-1aa9-49a4-9300-a8edbeb27cdf",
@@ -34,7 +37,8 @@
           "name": "Richardson Patton",
           "email": "richardsonpatton@endicil.com",
           "phone": "+1 (826) 404-3595",
-          "address": "758 Sandford Street, Driftwood, New Hampshire, 5984"
+          "address": "758 Sandford Street, Driftwood, New Hampshire, 5984",
+          "password": "123456"
         },
         {
           "id": "fcb432b4-c5d1-4bbf-bcbf-2ef84aba4374",
@@ -43,7 +47,8 @@
           "name": "Hutchinson Nunez",
           "email": "hutchinsonnunez@endicil.com",
           "phone": "+1 (862) 506-2518",
-          "address": "489 Pilling Street, Veyo, Iowa, 1839"
+          "address": "489 Pilling Street, Veyo, Iowa, 1839",
+          "password": "123456"
         },
         {
           "id": "a4a50bc9-092d-4da4-b20c-6d87966a1704",
@@ -52,7 +57,8 @@
           "name": "Stephens Valdez",
           "email": "stephensvaldez@endicil.com",
           "phone": "+1 (921) 475-3015",
-          "address": "722 Havemeyer Street, Joppa, California, 7371"
+          "address": "722 Havemeyer Street, Joppa, California, 7371",
+          "password": "123456"
         },
         {
           "id": "b468b2a4-9b4d-4514-9004-257a967a9585",
@@ -61,7 +67,8 @@
           "name": "Cherie Wood",
           "email": "cheriewood@trollery.com",
           "phone": "+1 (919) 579-3311",
-          "address": "481 Anthony Street, Sardis, Texas, 843"
+          "address": "481 Anthony Street, Sardis, Texas, 843",
+          "password": "123456"
         },
         {
           "id": "22da844c-dd50-4137-91eb-209877ec0720",
@@ -70,7 +77,8 @@
           "name": "Edith Henry",
           "email": "edithhenry@trollery.com",
           "phone": "+1 (932) 502-2985",
-          "address": "773 Fillmore Place, Canterwood, Maryland, 5545"
+          "address": "773 Fillmore Place, Canterwood, Maryland, 5545",
+          "password": "123456"
         },
         {
           "id": "c4b317e0-a461-416f-ab30-7d54c5fc378e",
@@ -79,7 +87,8 @@
           "name": "Walter Hubbard",
           "email": "walterhubbard@trollery.com",
           "phone": "+1 (836) 464-2977",
-          "address": "931 Grimes Road, Dupuyer, Minnesota, 8545"
+          "address": "931 Grimes Road, Dupuyer, Minnesota, 8545",
+          "password": "123456"
         },
         {
           "id": "147103a2-97ff-4c78-a081-72747ccfbcb0",
@@ -88,7 +97,8 @@
           "name": "Wall Davidson",
           "email": "walldavidson@trollery.com",
           "phone": "+1 (897) 564-3486",
-          "address": "297 Morgan Avenue, Tolu, Arizona, 9357"
+          "address": "297 Morgan Avenue, Tolu, Arizona, 9357",
+          "password": "123456"
         }
       ]
 }
