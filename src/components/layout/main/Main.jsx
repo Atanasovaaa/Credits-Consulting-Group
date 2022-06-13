@@ -8,7 +8,7 @@ export default function Main() {
     return (
             <Container className="main-content py-5">
                 <Routes>
-                    <Route exact path="/users-list" element={<UsersList />} />
+                    <Route path="/users-list" element={<UsersList />} />
                     <Route path="/user/:id" element={<User />} />
                     <Route path="/user/create" element={<UserForm />} />
                     <Route path="/user/edit/:id" element={<UserForm />} />
