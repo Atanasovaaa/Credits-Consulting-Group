@@ -1,0 +1,17 @@
+.user-form-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  form {
+    width: 35vw;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: start;
+    border-radius: 10px;
+  }
+}
