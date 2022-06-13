@@ -12,6 +12,10 @@ export default function UserCard( { user, deleteUser } ) {
         navigate(`/user/${user.id}`);
     }
     
+    const redirectToEdit = () => {
+        navigate(`/user/edit/${user.id}`);
+    }
+    
     if (!user) {
         return <p>No User!</p>;
     }
@@ -37,7 +41,7 @@ export default function UserCard( { user, deleteUser } ) {
                     <hr className="mb-3"/>
                     <div className="btn-holder">
                         <Button variant="primary" onClick={redirectToDetails}><i className="fa fa-eye"></i>Details</Button>
-                        <Button variant="success"><i className="fa fa-pencil"></i>Edit</Button>
+                        <Button variant="success" onClick={redirectToEdit}><i className="fa fa-pencil"></i>Edit</Button>
                         <Button variant="danger" onClick={() => deleteUser(user.id)}><i className="fa fa-trash"></i>Delete</Button>
                     </div>
                 </Card.Body>

@@ -25,5 +25,9 @@ export function saveUser(user) {
     user.picture = `https://picsum.photos/250/150/?random=${Math.random()}`;
   }
 
+  if (user.id) {
+    return axios.put(`${apiUrl}/${user.id}`, user);
+  }
+
   return axios.post(`${apiUrl}`, user);
 }
