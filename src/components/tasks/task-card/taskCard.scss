@@ -1,0 +1,18 @@
+.task-card {
+    margin: 10px 0;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        p {
+          text-align: start;
+        }
+    
+        .key {
+          font-weight: bold;
+          font-size: 14px;
+        }
+    }
+}
