@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import { getAllTasks } from "../../../utils/http-utils/task-request";
-import TaskCard from "../task-card/TaskCard";
+import { TaskCard } from "../task-card/TaskCard";
 import "./tasksList.scss";
 
 export function TasksList() {

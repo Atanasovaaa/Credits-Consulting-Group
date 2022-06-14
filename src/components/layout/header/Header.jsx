@@ -19,10 +19,9 @@ export default function Header() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/users-list">Users</Nav.Link>
             <Nav.Link href="/user/create">Create User</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown title="Tasks" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/tasks-list">Tasks List</NavDropdown.Item>
+              <NavDropdown.Item href="/task/create">Create Task</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown>
