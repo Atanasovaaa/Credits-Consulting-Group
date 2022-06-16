@@ -1,5 +1,6 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { registerUser } from "../../../utils/http-utils/user-requests";
@@ -71,6 +72,7 @@ export function Register() {
                 </Form.Group>
                 <Button variant="success" type="submit">Sign up</Button>
             </Form>
+            <Link to="/login">Already have an account?</Link>
         </div>
     );
 }

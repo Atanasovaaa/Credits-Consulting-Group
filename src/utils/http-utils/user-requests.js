@@ -1,10 +1,16 @@
 import axios from "axios";
 
 const apiUrl = "http://localhost:3003/users";
+const loggedUserKey = "loggedUser";
 
 export function getLoggedUser() {
   return JSON.parse(localStorage.getItem("loggedUser"));
 }
+
+export async function logout() {
+  localStorage.removeItem(loggedUserKey);
+}
+
 /*
     .then => resolved correctly
     .catch => has error
@@ -52,7 +58,7 @@ export async function login(user) {
   );
   if (!foundUser) throw new Error("Invalid username/password");
 
-  localStorage.setItem("loggedUser", JSON.stringify(foundUser));
+  localStorage.setItem(loggedUserKey, JSON.stringify(foundUser));
 
   return foundUser;
 }

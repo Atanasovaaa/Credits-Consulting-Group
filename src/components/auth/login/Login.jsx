@@ -1,5 +1,6 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import "./login.scss";
@@ -46,6 +47,7 @@ export function Login() {
                 </Form.Group>
                 <Button variant="success" type="submit">Sign in</Button>
             </Form>
+            <Link to="/register">Sign up</Link>
         </div>
     );
 }

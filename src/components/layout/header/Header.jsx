@@ -2,13 +2,21 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { getLoggedUser } from "../../../utils/http-utils/user-requests";
-
+import { getLoggedUser, logout } from "../../../utils/http-utils/user-requests";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const loggedUser = getLoggedUser();
   const taskUrl = `/tasks/${loggedUser.id}`;
+  const navigate = useNavigate();
   
+
+  const logoutHandler = () => {
+    logout().then(() => {
+      navigate('/login');
+    });
+  }
+
   return (
     <header>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -29,7 +37,7 @@ export default function Header() {
             </NavDropdown>
           </Nav>
           <Nav>
-            { loggedUser && <span className="btn btn-danger" refresh="true">Logout</span> }
+            { loggedUser && <span className="btn btn-danger" refresh="true" onClick={logoutHandler}>Logout</span> }
           </Nav>
         </Navbar.Collapse>
         </Container>
