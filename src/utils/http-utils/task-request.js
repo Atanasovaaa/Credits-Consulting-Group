@@ -18,6 +18,10 @@ export function getAllTasksByAuthor(authorId) {
   return axios.get(`${apiUrl}?authorId=${authorId}`);
 }
 
+export function getTaskById(taskId) {
+  return axios.get(`${apiUrl}/${taskId}`);
+}
+
 export function saveTask(task) {
   //create
   if (!task.id) {
@@ -32,5 +36,11 @@ export function saveTask(task) {
     return axios.post(apiUrl, task);
   }
 
+  task.createdDate = new Date(task.createdDate).toDateString();
+  task.dueDate = new Date(task.dueDate).toDateString();
   return axios.put(`${apiUrl}/${task.id}`, task);
+}
+
+export function deleteTask(id) {
+  return axios.delete(`${apiUrl}/${id}`);
 }

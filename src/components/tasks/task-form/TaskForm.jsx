@@ -1,20 +1,29 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./taskForm.scss";
-import { useState } from "react";
-import { saveTask, TaskStatus } from "../../../utils/http-utils/task-request";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { getTaskById, saveTask, TaskStatus } from "../../../utils/http-utils/task-request";
+import { useNavigate, useParams } from "react-router-dom";
 
 export function TaskForm() {
 
     const navigate = useNavigate();
-
+    const params = useParams();
     const [task, setTask] = useState({
         title: '',
         description: '',
         status: '',
         dueDate: ''
     });
+
+    useEffect(() => {
+        if(params.id) {
+            getTaskById(params.id).then((response) => {
+                    setTask(response.data);
+            });
+        }
+    }, [params.id]);
+    
 
     const onInputChange = (event) => {
         setTask((prevState) => (
@@ -58,7 +67,7 @@ export function TaskForm() {
                     <Form.Label>Due Date</Form.Label>
                     <Form.Control type="date" placeholder="Due Date" name="dueDate" value={task.dueDate || ''} onChange={onInputChange}/>
                 </Form.Group>
-                <Button variant="success" type="submit">Save</Button>
+                <Button variant="success" type="submit">{task.id ? "Edit Task" : "Create Task"}</Button>
             </Form>
         </div>
     );

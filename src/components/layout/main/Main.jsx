@@ -15,7 +15,9 @@ export default function Main() {
                     <Route path="/user/create" element={<UserForm />} />
                     <Route path="/user/edit/:id" element={<UserForm />} />
                     <Route path="/tasks-list" element={<TasksList />} />
+                    <Route path="/tasks/:id" element={<TasksList />} />
                     <Route path="/task/create" element={<TaskForm/>} />
+                    <Route path="/task/edit/:id" element={<TaskForm/>} />
                 </Routes>
             </Container>
     );

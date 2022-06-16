@@ -7,6 +7,7 @@ import { getLoggedUser } from "../../../utils/http-utils/user-requests";
 
 export default function Header() {
   const loggedUser = getLoggedUser();
+  const taskUrl = `/tasks/${loggedUser.id}`;
   
   return (
     <header>
@@ -21,6 +22,7 @@ export default function Header() {
             <Nav.Link href="/user/create">Create User</Nav.Link>
             <NavDropdown title="Tasks" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/tasks-list">Tasks List</NavDropdown.Item>
+              <NavDropdown.Item href={taskUrl}>My Tasks</NavDropdown.Item>
               <NavDropdown.Item href="/task/create">Create Task</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
